@@ -1,5 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
+import background02 from './../assets/background-2.png'
+import background01 from './../assets/background.png'
+
 const GlobalStyle = createGlobalStyle`
   * {
       padding: 0;
@@ -12,14 +15,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #f8fdff;
+    background: url(${background02}) no-repeat 1010px, url(${background01}) no-repeat 931px;
+    background-size: cover;
+    background-color: #F8FDFF;
     font-family: 'Poppins', sans-serif;
-    color: #1e255e;
   }
 
   button {
     background: none;
     outline: none;
+    border: none;
     font-family: 'Poppins', sans-serif;
   }
 
